@@ -1,0 +1,95 @@
+/* navigation */
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+}
+
+
+/* Home  */
+#Home{
+    height: 370px;
+    padding: 208px 26px;
+
+
+}
+
+Home ::before{
+    height: 480;
+}
+
+Home p{
+    font-size: 13px;
+}
+
+/* services */
+
+#services{
+
+    flex-direction: column;
+
+}
+
+#services .box img {
+    height: 156px;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+
+
+
+/* client  */
+
+#clients{
+    flex-wrap: wrap;
+
+}
+
+.client-section::before {
+    content: "";
+    position: absolute;
+    height: 80%;
+    background: url(../clients/money.jpg)no-repeat center center/cover;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients img{
+    width: 66px;
+    padding: 2px 6px;
+    height: auto;
+}
+
+/* contact  */
+.hcont {
+    font-size: 1.7rem;
+    padding: 83px;}
+    
+    .hconts{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+
+
+
+/* footer */
+
+
+
+
+/* utility */
+
+.h-primary{
+    font-size: 26px;
+}
+
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}

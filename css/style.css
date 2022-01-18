@@ -1,0 +1,298 @@
+/* Css reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Css variables */
+:root{
+    --navbar-height: 59px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* navigation bar  */
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-image: url("../bg7.jpg");
+    position: sticky;
+
+}
+
+
+#navbar::before{
+    content: "";
+   
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/*Navigation bar logo and image  */
+#logo{
+margin: 10px 34px;
+}
+
+#logo img{
+height: 52px;
+margin: -5px 0px;
+}
+
+
+
+/*Navigation bar list styling  */
+
+#navbar ul{
+   display: flex;
+   font-family: 'Dongle', sans-serif;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.8rem;
+
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/* Home Section  */
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 200px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 652px;
+}
+
+#Home::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: url("../bg7.jpg") no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* Services section */
+
+.services-container{
+    padding-top: 118px;
+   
+}
+
+#services{
+    margin: 14px;
+    margin-bottom: 50px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: #ddd4d4;
+}
+#services .box img{
+    height: 180px;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+
+
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+/* Clients  */
+
+
+.client-section::before{
+    content:"";
+    position: absolute;
+    height: 65%;
+    background: url("../clients/money.jpg")no-repeat center center/cover;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.hclient{
+        font-size: 3.8rem;
+        padding: 52px;              
+        margin-top: -24px;
+        font-family: 'Bree Serif', serif;
+
+}
+#clients img{
+    height: 160px;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Contact  */
+
+#contact{
+    position: relative;
+   
+   
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("../contact/bgp.jpg") no-repeat center center/cover;
+    z-index: -1;
+    width: 100%;
+    height: 120%;
+    opacity: 0.7;
+  
+}
+
+
+#contact h1{
+    color: black;
+    display: flex;
+}
+
+
+.hcont{
+    font-size: 3.8rem;
+    padding: 130px;              
+    margin-top: 132px;
+    font-family: 'Bree Serif', serif;
+
+}
+
+.hconts{
+    padding: 20px;
+    display: flex;
+    font-size: 2.3rem;
+    font-family: 'Bree Serif', serif;
+
+
+}
+
+
+.covid{
+    font-weight: bold;
+
+}
+
+.boxcovid{
+    display: flex;
+    background-color: #cffaf169;
+   
+}
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* utility class */
+.h-primary{
+    font-size: 3.3rem;
+    padding: 12px;              
+    margin-top: -90px;
+    font-family: 'Bree Serif', serif;
+
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.center{
+    text-align: center;
+}
+
+
