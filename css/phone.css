@@ -10,11 +10,11 @@
 
 
 /* Home  */
-#Home{
+#Home {
     height: 370px;
-    padding: 208px 26px;
-
-
+    padding: 131px 26px;
+    margin-bottom: 82px;
+    padding-bottom: 200px;
 }
 
 Home ::before{
