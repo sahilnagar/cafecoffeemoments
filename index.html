@@ -14,6 +14,8 @@
 </head>
 
 <body>
+
+<div id="preloader"></div>
     <nav id="navbar">
         <div id="logo">
             <img src="logos/logo.jpg" alt="myweb">
@@ -29,6 +31,7 @@
 
 
     <section id="Home">
+        
         <h1 class="h-primary">Welcome To City's Best Cafe</h1>
         <p>The cafe in such honeyed hues brings a sweetness to the day, coaxing an inner smile that warms from within.The cafe tables in their rich deep browns, the aroma with its dark aromatic perfume, call me in from the wintry day.
 
@@ -36,13 +39,15 @@
 
         <p>The smell when you come in is as sweet as when you open up that fresh bag of coffee beans, and you inhale a long whiff of it, wanting to enjoy it forever. </p>
 
-        <button class="btn">Visit Us Now</button>
+        <button class="btn" 
+         onclick = "window.location.href='NEWFOODWEBSITE/index.html';"
+         >Visit Us Now</button>
     </section>
 
    
 
 
-    <section id="servicesid" class="services-container">
+    <section id="servicesid" class="services-container reveal">
         <h1 class="h-primary center">Our Services</h1>
         <div id="services">
             <div class="box">
@@ -63,9 +68,14 @@
         </div>
     </section>
 
-    <section id="cl" class="client-section">
+    <section id="cl" class="client-section reveal">
         <h1 class="hclient center">Our Sponsers</h1>
+
+       
+
+
         <div id="clients">
+            
             <div class="client-item">
                 <img src="clients/ccd.png" alt="">
             </div>
@@ -81,7 +91,7 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="container reveal">
         <h1 class="hcont center">Contact Us</h1>
         <div class="contactclass">
             <!-- <img src="contact/call.png" alt="Call"> -->
@@ -111,8 +121,42 @@
     <footer>
         <div class="center">
             Copyright &copy; www.cafecoffee.com All Rights Reserved!
+            <br>-- DEVELOPED BY SAHIL NAGAR --
         </div>
     </footer>
+
+
+    <script>
+        var loader =document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display="none"
+        })
+    </script>
+
+
+<!-- REVEAL SCRIPT -->
+    <script type="text/javascript">
+        window.addEventListener('scroll',reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop =reveals[i].getBoundingClientRect().top;
+        var revealpoint =150;
+
+        if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+        }   
+
+    </script>
 
 </body>
 
