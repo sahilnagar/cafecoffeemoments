@@ -1,0 +1,230 @@
+.box img{
+    height: 200px;
+}
+
+/* navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-image: url("../images/bg7.jpg");
+    position: sticky;
+
+}
+
+
+#navbar::before{
+    content: "";
+   
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/*Navigation bar logo and image  */
+#logo{
+margin: 10px 34px;
+}
+
+#logo img{
+height: 52px;
+margin: -5px 0px;
+}
+
+
+
+/*Navigation bar list styling  */
+
+#navbar ul{
+   display: flex;
+   font-family: 'Dongle', sans-serif;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.8rem;
+
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+.icons i,
+.icons a{
+    cursor: pointer;
+    margin-left: 5rem;
+    height: 4.5rem;
+    width: 4.0rem;
+    /* text-align: center; */
+    font-size: 1.7rem;
+    color: white;
+    border-radius: 50%;
+}
+/* DISHES SECTION */
+
+*{
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+     background : url(../images/bg1.jpg) no-repeat center  
+     center fixed;
+    background-size : cover;
+}
+
+.btn{
+    /* background-color: darkblue; */
+    /* border: black 2px solid; */
+    border-radius: .5rem;
+    text-decoration: none;
+    color: white;
+    /* padding: 2px; */
+    /* padding-left: 8px; */
+    /* padding-right: 8px; */
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1rem;
+    /* background: var(--black); */
+    background-color: rgb(2, 2, 72);
+    cursor: pointer;
+    margin-bottom: 4px;
+    padding: 8px;
+}
+
+.btn:hover{
+    background-color: brown;
+    color: white;
+    font-size: large;
+    /* font-weight: bold; */
+}
+
+.sub-heading{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 2rem;
+    text-transform: uppercase;
+    background-color: rgb(176, 93, 5);
+    padding: 0.1px;
+    /* border-radius: 25%; */
+    border: 2px solid black;
+    border-radius: 20px;
+    color: aliceblue;
+    margin-left: 700px;
+    margin-right: 700px;
+    margin-bottom: 20px;
+}
+
+.heading{
+    text-align: center;
+    /* color: var(--black); */
+    font-size: 5rem;
+    padding-top: 1.5rem;
+    color: whitesmoke;
+    background-color: rgb(130, 38, 5);
+    padding: 0.1px;
+    /* border-radius: 25%; */
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-bottom: 20px;
+}
+
+
+.dishes .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(28rem,1fr));
+    gap: 7rem;
+     
+    
+}
+
+.dishes .box-container .box{
+    padding: 2.5rem;
+    background-color: black;
+    border-radius: 10%;
+    border: .1rem solid black;
+    box-shadow: 0vh;
+    position: relative;
+    color: aliceblue;
+    overflow: hidden;
+}
+
+.dishes .box-container .box .fa-heart,
+.dishes .box-container .box .fa-eye{
+    position: absolute;
+    top: 1.5rem;
+    /* background-color: white; */
+    border-radius: 10%;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.dishes .box-container .box .fa-heart:hover,
+.dishes .box-container .box .fa-eye:hover{
+    /* background-color: whitesmoke; */
+    color: yellow;
+}
+
+.dishes .box-container .box .fa-heart{
+    right: 1.5rem;
+
+}
+
+.dishes .box-container .box .fa-eye{
+    left: 1.5rem;
+}
+
+
+.dishes .box-container img{
+    align-items: center;
+    border-radius: 70%;
+}
+
+.dishes .box-container img h3{
+    color: black;
+    font-size: 50px;
+}
+
+.dishes .box-container .stars{
+    padding: 1rem 0;
+}
+
+.dishes .box-container .box .stars i{
+    font-size: 1.7rem;
+    color: rgb(11, 214, 11);
+}
+
+.dishes .box-container .box span{
+    color: rgb(123, 144, 7);
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 2.0rem;
+    
+}
